@@ -1,6 +1,6 @@
 <template>
   <section class="blog">
-    <div class="about_content">
+    <div class="blog_content">
       <h1>Coming soon ...</h1>
     </div>
     <div class="overlay"></div>
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-export default { name: "About" };
+export default { name: "Blog" };
 </script>
 
 <style scoped>
@@ -21,14 +21,14 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.about_content {
+.blog_content {
   position: absolute;
   width: calc(100% - 40px);
   height: calc(100vh - 100px);
   z-index: 1000;
   margin: 20px;
   opacity: 0.7;
-  background: linear-gradient(to bottom, #000, #fff 35% 65%, #000);
+  background: linear-gradient(to bottom, #fff, #000 35% 65%, #fff);
 }
 .overlay {
   z-index: 100;
